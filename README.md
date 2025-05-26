@@ -1,26 +1,23 @@
-# Конфигурация Webpack с TypeScript, SWC, SCSS, SVG, PostCSS
+# Webpack Configuration with TypeScript, SWC, SCSS, SVG, and PostCSS
+- TypeScript: Uses TypeScript for static typing and to improve code quality.
+- SWC (Speedy Web Compiler): Uses SWC for fast compilation of TypeScript and JavaScript.
+- SCSS: Supports SCSS with modular styles (CSS Modules).
+- SVG: Processes SVG files as React components using @svgr/webpack.
+- Images: Processes images (PNG, JPG, JPEG, GIF, WebP) using asset/resource and saves them in the folder assets/images.
+- Fonts: Handles fonts.
+- Hot Module Replacement (HMR): Supports hot reloading to speed up development.
+- Bundle Analysis: Uses webpack-bundle-analyzer to analyze the bundle size.
+- Type Checking: Uses fork-ts-checker-webpack-plugin to perform TypeScript type checking in a separate process.
+- Copying Resources: Uses copy-webpack-plugin to copy static assets.
+- PostCSS: Uses PostCSS to process CSS with postcss-preset-env and cssnano.
+- Browser Compatibility: Configures browserslist to ensure compatibility with various browsers.
+- Automatic JSX Transform: Uses runtime: 'automatic' for automatic JSX transformation.
 
-- TypeScript: Использует TypeScript для статической типизации и улучшения качества кода.
-- SWC (Speedy Web Compiler): Использует SWC для быстрой компиляции TypeScript и JavaScript.
-- SCSS: Поддержка SCSS с модульными стилями (CSS Modules).
-- SVG: Обработка SVG-файлов как React-компонентов с помощью @svgr/webpack.
-- Изображения: Обработка изображений (PNG, JPG, JPEG, GIF, WebP) с помощью asset/resource и сохранение их в папку assets/images.
-- Шрифты: Обработка шрифтов.
-- Горячая перезагрузка (HMR): Поддержка горячей перезагрузки для ускорения разработки.
-- Анализ сборки: Использование webpack-bundle-analyzer для анализа размера бандла.
-- Проверка типов: Использование fork-ts-checker-webpack-plugin для проверки типов TypeScript в отдельном процессе.
-- Копирование ресурсов: Использование copy-webpack-plugin для копирования статических ресурсов.
-- PostCSS: Использование PostCSS для обработки CSS с postcss-preset-env и cssnano.
-- Браузерная совместимость: Настройка browserslist для обеспечения совместимости с различными браузерами.
-- Автоматическое преобразование JSX: Использование runtime: 'automatic' для автоматического преобразования JSX.
+## Available Scripts
+- yarn start: Launches the development server with hot reloading.
+- yarn analyzer: Builds the project for production with bundle size analysis.
+- yarn build:dev: Builds the project for development.
+- yarn build:prod: Builds the project for production.
 
-## Доступные скрипты:
-
-- yarn start: Запуск сервера разработки с горячей перезагрузкой.
-- yarn analyzer: Сборка проекта для production с анализом размера бандла.
-- yarn build:dev: Сборка проекта для development.
-- yarn build:prod: Сборка проекта для production.
-
-## Настройка браузерной совместимости:
-
-- Настройка browserslist в package.json обеспечивает совместимость с указанными браузерами.
+## Browser Compatibility Configuration
+The browserslist setting in package.json ensures compatibility with the specified browsers.
